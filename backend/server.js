@@ -1,20 +1,24 @@
 import express from 'express';
 import data from './data';
-
+const port = 5000;
 const app = express ();
 
-app.get("/api/products:id", (req, res) => {
-    const productId = req.params._id;
-    const product = data.products.find(x=>x._id === productId);
-    if (product)
+app.get("/api/products/:id", (req, res) => {
+    const productId = req.params.id;
+    const product = data.products.find(x => x._id === productId);
+    if (product) {
         res.send(product);
-    else   
+    }
+    else {
         res.status(404).send({msg: "Product Not Found."})
+    }
 });
-app.get("/api/products", (req, res) => {
 
+app.get("/api/products", (req, res) => {
     res.send(data.products);
 });
 
 
-app.listen(5000, () => {console.log("Server started at http://localhost:5000")});
+app.listen(port, () => {
+    console.log(`Server started at http://localhost:${port}`) 
+});

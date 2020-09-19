@@ -1,32 +1,47 @@
+
 export default {
-    products: [{
-        _id:'123',
-        name: 'Smol bois',
+    products: [
+      {
+        _id: '123',
+        name: 'Slim Shirt',
+        category: 'Shirts',
         image: '/images/d1.jpg',
-        price: 50,
-        brand: 'Animez', 
-        rating: 5.8,
+        price: 60,
+        brand: ' Nike',
+        rating: 4.5,
         numReviews: 10,
-        countInStock: 5,
-    },
-    {
-        _id:'124',
-        name: 'Big Chungus',
-        image: '/images/d3.jpg',
-        price: 7,
-        brand: 'AnimezBois', 
-        rating: 8.8,
-        numReviews: 985,
-        countInStock: 0,
-    },
-    {
-        _id:'125',
-        name: 'Smol bois',
+        countInStock: 6,
+      },
+      {
+        _id: '2',
+        name: 'Fit Shirt',
+        category: 'Shirts',
         image: '/images/d2.jpg',
         price: 50,
-        brand: 'Animez', 
-        rating: 5.8,
-        numReviews: 10,
-        countInStock: 5,
-    }]
-}
+        brand: ' Nike',
+        rating: 4.2,
+        numReviews: 5
+      },
+      {
+        _id: '3',
+        name: 'Best Pants',
+        category: 'Pants',
+        image: '/images/d3.jpg',
+        price: 70,
+        brand: ' Nike',
+        rating: 4.5,
+        numReviews: 8,
+        countInStock: 6,
+      }, {
+        _id: '4',
+        name: 'Best Pants',
+        category: 'Pants',
+        image: '/images/d1.jpg',
+        price: 70,
+        brand: ' Nike',
+        rating: 4.5,
+        numReviews: 8,
+        countInStock: 6,
+      },
+    ]
+  }
